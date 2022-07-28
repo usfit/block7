@@ -1188,6 +1188,8 @@ a {
     .feedback, .feedback--call {
       box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.2);
       max-height: 676px; } }
+  .feedback .title::before, .feedback--call .title::before {
+    margin-left: -32px; }
 
 @media (min-width: 768px) {
   .feedback--call {
@@ -1248,9 +1250,6 @@ input::placeholder, textarea::placeholder {
 
 .feedback__button-submit {
   align-self: flex-end; }
-
-.title::before {
-  margin-left: -32px; }
 
 .button-submit {
   display: flex;
