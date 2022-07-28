@@ -1,0 +1,17 @@
+/* Для 1120px и выше */
+@import 'colors';
+
+.button-read-more {
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: flex;
+    gap: 8px;
+    width: max-content;
+    align-items: center;
+    color: $text-color;
+    font-weight: 650;
+    font-size: 16px;
+}
+

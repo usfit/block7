@@ -1,0 +1,14 @@
+@import 'colors.scss';
+
+.link-text {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+    color: $text-color;
+    font-weight: 650;
+    text-decoration: none;
+  }
+
+.read-more.link-text {
+  width: max-content;
+}

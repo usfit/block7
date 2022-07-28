@@ -1,0 +1,35 @@
+@import 'colors.scss';
+
+.upper-menu {
+    display: flex;
+    justify-content: space-between;
+    height: 88px;
+    border-bottom: 1px solid $line-color;
+
+    @media (max-width: 768px) {
+        gap: 16px;
+        padding: 0 16px;
+    }
+
+    @media (min-width: 768.1px) and (max-width: 1119.9px) {
+
+        padding: 0 24px;
+
+        .upper-menu__block--left {
+            gap: 40px;
+        }
+        .upper-menu__block--main {
+            gap: 42px;
+        }
+    }
+}
+
+.upper-menu__block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @media (min-width: 768.1px) {
+        gap: 32px;
+    }
+}

@@ -1,0 +1,39 @@
+@import 'colors.scss';
+
+.icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $background-icons-color;
+    opacity: 1;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+}
+
+
+@media (min-width: 768.1px) and (max-width: 1119.9px) {
+    .icon--profile::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        top: 5px;
+        right: -50%;
+        border-radius: 1px;
+        background-color: $border-items-color;
+    }
+}
+
+.icon--big {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }

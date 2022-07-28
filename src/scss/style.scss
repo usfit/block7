@@ -1,0 +1,38 @@
+@import 'normalize.scss';
+@import 'colors.scss';
+@import 'fonts.scss';
+@import 'header.scss';
+@import 'icon.scss';
+@import 'upper-menu';
+@import 'logo.scss';
+@import 'size.scss';
+@import 'content.scss';
+@import 'title.scss';
+@import 'link-text';
+@import 'menu.scss';
+@import 'block.scss';
+@import 'read-more.scss';
+@import 'container.scss';
+@import 'link.scss';
+@import 'indent';
+@import 'header-post.scss';
+@import 'dropdown';
+@import 'content-post.scss';
+@import 'container-brands.scss';
+@import 'swiper.scss';
+@import 'button-read-more.scss';
+@import 'container-types.scss';
+@import 'button-order.scss';
+@import 'container-prices.scss';
+@import 'footer.scss';
+@import 'burger.scss';
+@import 'navigation.scss';
+@import 'all.scss';
+@import 'feedback.scss';
+@import 'button-submit.scss';
+
+body {
+  font-family: TT_Lakes, Arial, sans-serif;
+  background-color: $background-color;
+  width: 100%;
+}

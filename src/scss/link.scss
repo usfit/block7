@@ -1,0 +1,13 @@
+@import 'colors.scss';
+
+.link {
+    color: $text-color;
+    text-decoration: none;
+    opacity: 1;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+}

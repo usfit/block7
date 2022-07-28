@@ -1,0 +1,42 @@
+
+
+@media (max-width: 767.9px) {
+  
+  .swiper-pagination-bullet {
+    background-color: #B5B6BC;
+  }
+  
+  .swiper-container {
+    position: relative;
+    width: 90%;
+  }
+
+  .container-brands .swiper-container {
+      height: 120px;  
+  }
+
+  .container-brands .swiper-pagination {
+    top: 90px;
+  }
+
+
+
+  .container-types .swiper-container {
+    height: 208px;
+  }
+
+  .container-types .swiper-pagination {
+    top: 178px;
+  }
+
+
+
+
+  .container-prices .swiper-container {
+    height: 248px;
+  }
+
+  .container-prices .swiper-pagination {
+    top: 218px;
+  }
+}

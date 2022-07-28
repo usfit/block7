@@ -1,0 +1,17 @@
+@import 'colors.scss';
+
+.container {
+    opacity: 1;
+    transition: 0.5s;
+    @media (min-width: 1120px) {
+        max-width: 1120px;
+        margin: auto;
+        padding: 42px 32px;
+    }
+}
+
+.container--close {
+    background-color: $background-color-white;
+    opacity: 0.04;
+    transition: 0.5s;
+}

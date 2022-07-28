@@ -1,0 +1,41 @@
+.container-types__type {
+    width: 240px;
+    height: 160px;
+    @media (min-width: 768px) and (max-width: 1119.9px) {
+        width: 224px;
+    }
+}
+
+.container-types__link {
+    justify-content: space-between;
+    width: 240px;
+    height: 160px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media (min-width: 768px) and (max-width: 1119.9px) {
+        width: 224px;
+    }
+}
+
+.container-types__text {
+    align-self: flex-start;
+}
+
+.container-types__dropdown {
+    align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+    .container-types__hidden {
+        height: 336px;
+    }    
+  }
+  
+  /* Для 768px */
+  
+  
+  @media (min-width: 768px) and (max-width: 1015.9px) {
+    .container-types__hidden {
+        height: 513px;
+    }   
+  }

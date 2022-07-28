@@ -1,0 +1,44 @@
+@import 'colors.scss';
+
+.title {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 40px;
+        background-color: $highlight-color;
+        border-radius: 0 4px 4px 0;
+        top: -7px;
+    }
+
+    @media (max-width: 768px) {
+        &::before {
+            margin-left: -16px;
+        }
+    }
+
+    @media (min-width: 768.1px) and (max-width: 1119.9px) {
+        &::before {
+            margin-left: -24px;
+        }
+    }
+
+    @media (min-width: 1120px) {
+        &::before {
+            margin-left: -32px;
+        }
+    }
+
+    .title__text {
+        font-size: 28px;
+        line-height: 100%;
+        letter-spacing: -0.6px;
+        color: $text-color;
+        margin: 0px;
+        padding: 0px;
+    }
+
+}
+

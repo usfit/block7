@@ -1,0 +1,32 @@
+.container-brands__brand {
+    width: 240px;
+    height: 72px;
+    @media (min-width: 768px) and (max-width: 1119.9px) {
+        width: 224px;
+    }
+}
+
+.container-brands__link {
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 72px;
+    @media (min-width: 768px) and (max-width: 1119.9px) {
+        width: 224px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-brands__hidden {
+        height: 248px;
+    }    
+  }
+  
+  /* Для 768px */
+  
+  
+  @media (min-width: 768px) and (max-width: 1015.9px) {
+    .container-brands__hidden {
+        height: 336px;
+    }   
+  }

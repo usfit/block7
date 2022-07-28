@@ -1,0 +1,37 @@
+@import 'colors.scss';
+
+.footer {
+    display: flex;
+    border-top: 1px solid $border-menu-color;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 25px;
+    align-items: center;
+  
+    .link {
+      color: $title-color;
+    }
+  
+    @media (max-width: 767.9px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+      padding-top: 16px;
+      padding-bottom: 19px;
+    }
+  
+    @media (min-width: 768px) and (max-width: 1119.9px) {
+    
+      .footer__item {
+        padding: 0;
+        margin: 0;
+        width: 215px;
+      }
+    }
+  
+    @media (min-width: 1120px) {
+      .footer__item {
+        max-width: 330px;
+      }
+    }
+  }

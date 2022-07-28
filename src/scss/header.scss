@@ -1,0 +1,14 @@
+@import 'colors.scss';
+
+.header {
+    background-color: $background-color-white;
+    margin: 0px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    
+
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+}

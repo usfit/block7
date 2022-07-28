@@ -1,0 +1,54 @@
+@import 'colors.scss';
+
+.content-post {
+    @media (max-width: 767.9px) {
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 1120px;
+        margin: auto;
+    }
+}
+
+.content-post__list {
+    list-style: none;
+    margin: 0;
+    padding-inline-start: 0;
+
+    @media (min-width: 768px) {
+        display: flex;
+        gap: 32px;
+        row-gap: 16px;
+        flex-wrap: wrap;
+        height: 165px;
+        transition: 0.3s;
+        overflow-y: hidden;
+        justify-content: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 1119.9px) {
+        column-gap: 24px;
+    }
+}
+
+.content-post__item {
+    background-color: $background-color-white;
+    border: 1px solid $border-items-color;
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.content-post__link {
+    display: flex;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.content-post__text {
+    color: $text-color;
+}
