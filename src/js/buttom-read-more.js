@@ -9,10 +9,10 @@ readMoreBrands.addEventListener('click', function(evt) {
     elementsAllBrands.classList.toggle('container-brands__hidden');
     if (elementsAllBrands.classList.contains('container-brands__hidden')) {
         readMoreBrands.querySelector('p').textContent = 'Скрыть';
-        readMoreBrands.querySelector('img').src = '../img/icons/read_hide.svg';
+        readMoreBrands.querySelector('img').src = 'img/icons/read_hide.svg';
     } else {
         readMoreBrands.querySelector('p').textContent = 'Показать все';
-        readMoreBrands.querySelector('img').src = '../img/icons/read_more.svg'
+        readMoreBrands.querySelector('img').src = 'img/icons/read_more.svg'
     }
 });
 
@@ -21,9 +21,9 @@ readMoreTypes.addEventListener('click', function(evt) {
     elementsAllTypes.classList.toggle('container-types__hidden');
     if (elementsAllTypes.classList.contains('container-types__hidden')) {
         readMoreTypes.querySelector('p').textContent = 'Скрыть';
-        readMoreTypes.querySelector('img').src = '../img/icons/read_hide.svg';
+        readMoreTypes.querySelector('img').src = 'img/icons/read_hide.svg';
     } else {
         readMoreTypes.querySelector('p').textContent = 'Показать все';
-        readMoreTypes.querySelector('img').src = '../img/icons/read_more.svg'
+        readMoreTypes.querySelector('img').src = 'img/icons/read_more.svg';
     }
 });
