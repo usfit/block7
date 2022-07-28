@@ -1189,6 +1189,10 @@ a {
       box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.2);
       max-height: 676px; } }
 
+@media (min-width: 768px) {
+  .feedback--call {
+    height: 94vh; } }
+
 @media (min-width: 1120px) {
   .feedback__icon {
     position: absolute;
