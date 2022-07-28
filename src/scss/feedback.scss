@@ -24,6 +24,12 @@
     }
 }
 
+.feedback--call {
+    @media (min-width: 768px) {
+        height: 94vh;
+    }
+}
+
 .feedback__icon {
     @media (min-width: 1120px) {
         position: absolute;
