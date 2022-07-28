@@ -26,7 +26,7 @@ feedbackCallOpen.addEventListener('click', function(evt) {
 feedbackCallOpenBurger.addEventListener('click', function(evt) {
     if (window.matchMedia('(max-width: 1119.9px)').matches) {
         evt.preventDefault;
-        feedback.classList.toggle('feedback--open');
+        feedbackCall.classList.toggle('feedback--open');
         navigation.classList.toggle('navigation--open');
     } else {
         openClose(feedbackCall);
