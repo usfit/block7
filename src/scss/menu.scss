@@ -2,18 +2,24 @@
 
 .menu {
     display: flex;
-}
-
-.menu--scroll {
-    overflow-x: scroll;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-        width: 0;
-        height: 0;
+    @media (min-width: 1120px) {
+        gap: 10px;
+        flex-wrap: wrap;
     }
 
+    @media (max-width: 1119.9px) {
+
+            overflow-x: scroll;
+            scrollbar-width: none;
+        
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+    }
 }
+
+
 
 .menu__item {
     display: flex;
