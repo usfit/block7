@@ -1,5 +1,13 @@
 @import 'colors.scss';
 
+.burger__fix {
+  display: flex;
+  flex-direction: column;
+  width: 276px;
+}
+
+
+
 .burger {
   display: flex;
   flex-direction: column;
@@ -8,10 +16,13 @@
   max-width: 320px;
   gap: 42px;
   height: 94vh;
+  position: fixed;
+  background-color: $background-color-white;
   @media (min-width: 1120px) {
     width: 276px;
     max-height: 888px;
     box-sizing: border-box;
+
   }
   @media (max-width: 1119.9px) {
     min-height: 650px;
