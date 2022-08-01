@@ -15,25 +15,25 @@
         <div class="mask"></div>
         <!-- Обратная связь -->
 
-        <div class="feedback">
+        <div class="popup">
             <div>
-                <a href="#" class="icon feedback__icon feedback__icon--close">
+                <a href="#" class="icon popup__icon popup__icon--close">
                     <img src="img/icons/menu_burger.svg" alt="icon-menu">
                 </a>
             </div>
             <h2 class="title">
                 Обратная связь
             </h2>
-            <form class='form-feedback' action="#" name="call" method="post">
-                <input type="text" name="name" placeholder="Имя" class="form-feedback__item form-feedback__input link">
-                <input type="tel" name="tel" placeholder="Телефон" class="form-feedback__item form-feedback__input link">
-                <input type="email" name="email" placeholder="Электронная почта" class="form-feedback__item form-feedback__input link">
-                <textarea name="message" class="form-feedback__item form-feedback__textarea link" placeholder="Сообщение"></textarea>
-                <p class="feedback__text">
-                    Нажимая “отправить”, вы даете согласие на <a href="#" class="feedback__link link">обработку персональных данных</a> 
-                    и соглашаетесь с нашей <a href="#" class="feedback__link link">политикой конфиденциальности</a>
+            <form class='popup__form' action="#" name="call" method="post">
+                <input type="text" name="name" placeholder="Имя" class="popup__item popup__input link">
+                <input type="tel" name="tel" placeholder="Телефон" class="popup__item popup__input link">
+                <input type="email" name="email" placeholder="Электронная почта" class="popup__item popup__input link">
+                <textarea name="message" class="popup__item popup__textarea link" placeholder="Сообщение"></textarea>
+                <p class="popup__text">
+                    Нажимая “отправить”, вы даете согласие на <a href="#" class="popup__link link">обработку персональных данных</a> 
+                    и соглашаетесь с нашей <a href="#" class="popup__link link">политикой конфиденциальности</a>
                 </p>
-                <button type="submit" class="button-submit feedback__button-submit link"> 
+                <button type="submit" class="button-submit popup__button-submit link"> 
                     Отправить  
                     <img src="img/icons/dropdown-white.svg">
                 </button>
@@ -42,20 +42,20 @@
 
         <!-- Обратный звонок -->
 
-        <div class="feedback--call">
-            <a href="#" class="icon feedback__icon feedback__call--close">
+        <div class="popup popup--call">
+            <a href="#" class="icon popup__icon popup__call--close">
                 <img src="img/icons/menu_burger.svg" alt="icon-menu">
             </a>
             <h2 class="title">
                 Заказать звонок
             </h2>
-            <form class='form-feedback' action="#" name="call" method="post">
-                <input type="tel" name="tel" placeholder="Телефон" class="form-feedback__item form-feedback__input link">
-                <p class="feedback__text">
-                    Нажимая “отправить”, вы даете согласие на <a href="#" class="feedback__link link">обработку персональных данных</a> 
-                    и соглашаетесь с нашей <a href="#" class="feedback__link link">политикой конфиденциальности</a>
+            <form class='popup__form' action="#" name="call" method="post">
+                <input type="tel" name="tel" placeholder="Телефон" class="popup__item popup__input link">
+                <p class="popup__text">
+                    Нажимая “отправить”, вы даете согласие на <a href="#" class="popup__link link">обработку персональных данных</a> 
+                    и соглашаетесь с нашей <a href="#" class="popup__link link">политикой конфиденциальности</a>
                 </p>
-                <button type="submit" class="button-submit feedback__button-submit link"> 
+                <button type="submit" class="button-submit popup__button-submit link"> 
                     Отправить  
                     <img src="img/icons/dropdown-white.svg">
                 </button>
@@ -571,8 +571,8 @@
                         <!-- Слайдер на маленький размер -->
 
                         <div class="swiper-container size--large size--medium">
-                            <div class="swiper-wrapper">
-                                <div class="container-prices__slide swiper-slide">
+                            <ul class="swiper-wrapper">
+                                <li class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
                                         <h2 class="title__item">Ремонтные услуги</h2>
                                         Диагностика
@@ -591,9 +591,9 @@
                                             <img src="img/icons/dropdown-white.svg" alt="dropdown-white">
                                         </button>
                                     </div>
-                                </div>
+                                </li>
 
-                                <div class="container-prices__slide swiper-slide">
+                                <li class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
                                         <h2 class="title__item">Ремонтные услуги</h2>
                                         Замена дисплея
@@ -612,9 +612,9 @@
                                             <img src="img/icons/dropdown-white.svg" alt="dropdown-white">
                                         </button>
                                     </div>
-                                </div>
+                                </li>
 
-                                <div class="container-prices__slide swiper-slide">
+                                <li class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
                                         <h2 class="title__item">Ремонтные услуги</h2>
                                         Замена полифонического динамика
@@ -633,9 +633,9 @@
                                             <img src="img/icons/dropdown-white.svg" alt="dropdown-white">
                                         </button>
                                     </div>
-                                </div>
+                                </li>
 
-                                <div class="container-prices__slide swiper-slide">
+                                <li class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
                                         <h2 class="title__item">Ремонтные услуги</h2>
                                         Тестирование с выдачей технического заключения
@@ -654,9 +654,9 @@
                                             <img src="img/icons/dropdown-white.svg" alt="dropdown-white">
                                         </button>
                                     </div>
-                                </div>
+                                </li>
 
-                                <div class="container-prices__slide swiper-slide">
+                                <li class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
                                         <h2 class="title__item">Ремонтные услуги</h2>
                                         Замена программного обеспечения
@@ -675,9 +675,9 @@
                                             <img src="img/icons/dropdown-white.svg" alt="dropdown-white">
                                         </button>
                                     </div>
-                                </div>
+                                </li>
 
-                            </div>
+                            </ul>
 
                             <div class="swiper-pagination"></div>
                         </div>    
@@ -700,19 +700,21 @@
 
             <!-- footer -->
 
-            <footer class="footer indent">
-                
-                <p href="#" class="footer__item">
-                    © 2019 CPS <br> Разработано командой Apesong
-                </p>
-        
-                <a href="#" class="footer__item link">
-                    Политика конфиденциальности
-                </a>
-                <p href="#" class="footer__item">
-                    Информация, размещенная на данной странице, не является публичной офертой
-                </p>
-        
+            <footer>
+
+                <ul class="footer indent">
+                    <li href="#" class="footer__item">
+                        © 2019 CPS <br> Разработано командой Apesong
+                    </li>
+                    <li>
+                        <a href="#" class="footer__item link">
+                            Политика конфиденциальности
+                        </a>
+                    </li>
+                    <li href="#" class="footer__item">
+                        Информация, размещенная на данной странице, не является публичной офертой
+                    </li>
+                </ul>
             </footer>
 
         </div>

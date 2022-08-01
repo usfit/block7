@@ -1,12 +1,12 @@
 let feedbackOpen = document.querySelector('.chat__icon--open');
 let feedbackOpenBurger = document.querySelector('.burger-chat__icon--open');
-let feedbackClose = document.querySelector('.feedback__icon--close');
-let feedbackCallClose = document.querySelector('.feedback__call--close');
+let feedbackClose = document.querySelector('.popup__icon--close');
+let feedbackCallClose = document.querySelector('.popup__call--close');
 let feedbackCallOpen = document.querySelector('.call__icon--open');
 let feedbackCallOpenBurger = document.querySelector('.burger-call__icon--open');
 
-let feedback = document.querySelector('.feedback');
-let feedbackCall = document.querySelector('.feedback--call');
+let feedback = document.querySelector('.popup');
+let feedbackCall = document.querySelector('.popup--call');
 
 let mask = document.querySelector('.mask');
 let swiper = document.querySelectorAll('.swiper-wrapper');
@@ -14,7 +14,7 @@ let swiper = document.querySelectorAll('.swiper-wrapper');
 let navigation = document.querySelector('.navigation');
 
 let openClose = function(feedbackClass) {
-    feedbackClass.classList.toggle('feedback--open');
+    feedbackClass.classList.toggle('popup--open');
 };
 
 let openCloseMask = function() {
@@ -25,12 +25,12 @@ let openCloseMask = function() {
 };
 
 mask.addEventListener('click', function() {
-    if (feedback.classList.contains('feedback--open')) {
+    if (feedback.classList.contains('popup--open')) {
         openClose(feedback);
         if (window.matchMedia('(max-width: 1119.9px)').matches) {
             openCloseMask();
         }
-    } else if (feedbackCall.classList.contains('feedback--open')) {
+    } else if (feedbackCall.classList.contains('popup--open')) {
         openClose(feedbackCall);
         if (window.matchMedia('(max-width: 1119.9px)').matches) {
             openCloseMask();

@@ -1,6 +1,6 @@
 @import 'colors.scss';
 
-.feedback, .feedback--call {
+.popup {
     position: absolute;
     right: 0;
     top: -900px;
@@ -34,7 +34,7 @@
     }
 }
 
-.feedback__icon {
+.popup__icon {
     @media (min-width: 1120px) {
         position: absolute;
         left: -72px;
@@ -42,14 +42,14 @@
     }
 }
 
-.feedback--open {
+.popup--open {
     position: fixed;
     top: 0;
     opacity: 1;
     transition: 0.5s;
 }
 
-.feedback__text {
+.popup__text {
     padding: 0;
     margin: 0;
     color: #7E7E82;
@@ -57,20 +57,20 @@
     line-height: 16px;
 }
 
-.feedback__link {
+.popup__link {
     text-decoration: none;
     color: #FF3E79;
     opacity: 1;
     transition: 0.3s;
 }
 
-.form-feedback {
+.popup__form {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.form-feedback__item {
+.popup__item {
     border: 1px solid #EAEAEA;
     border-radius: 8px;
     font-size: 16px;
@@ -85,18 +85,18 @@ input::placeholder, textarea::placeholder {
     color: #B5B6BC;
 }
 
-.form-feedback__input {
+.popup__input {
     height: 48px;
 }
 
-.form-feedback__textarea {
+.popup__textarea {
     height: 118px;
     resize: none;
     padding-top: 12px;
     padding-bottom: 12px;
 }
 
-.feedback__button-submit {
+.popup__button-submit {
     align-self: flex-end;
 }
 
