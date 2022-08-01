@@ -9,12 +9,63 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 </head>
 <body>
-    <div class="all">
+
+
+    <div class="general-container">
+        <div class="mask"></div>
+        <!-- Обратная связь -->
+
+        <div class="feedback">
+            <div>
+                <a href="#" class="icon feedback__icon feedback__icon--close">
+                    <img src="img/icons/menu_burger.svg" alt="icon-menu">
+                </a>
+            </div>
+            <h2 class="title">
+                Обратная связь
+            </h2>
+            <form class='form-feedback' action="#" name="call" method="post">
+                <input type="text" name="name" placeholder="Имя" class="form-feedback__item form-feedback__input link">
+                <input type="tel" name="tel" placeholder="Телефон" class="form-feedback__item form-feedback__input link">
+                <input type="email" name="email" placeholder="Электронная почта" class="form-feedback__item form-feedback__input link">
+                <textarea name="message" class="form-feedback__item form-feedback__textarea link" placeholder="Сообщение"></textarea>
+                <p class="feedback__text">
+                    Нажимая “отправить”, вы даете согласие на <a href="#" class="feedback__link link">обработку персональных данных</a> 
+                    и соглашаетесь с нашей <a href="#" class="feedback__link link">политикой конфиденциальности</a>
+                </p>
+                <button type="submit" class="button-submit feedback__button-submit link"> 
+                    Отправить  
+                    <img src="img/icons/dropdown-white.svg">
+                </button>
+            </form>
+        </div>
+
+        <!-- Обратный звонок -->
+
+        <div class="feedback--call">
+            <a href="#" class="icon feedback__icon feedback__call--close">
+                <img src="img/icons/menu_burger.svg" alt="icon-menu">
+            </a>
+            <h2 class="title">
+                Заказать звонок
+            </h2>
+            <form class='form-feedback' action="#" name="call" method="post">
+                <input type="tel" name="tel" placeholder="Телефон" class="form-feedback__item form-feedback__input link">
+                <p class="feedback__text">
+                    Нажимая “отправить”, вы даете согласие на <a href="#" class="feedback__link link">обработку персональных данных</a> 
+                    и соглашаетесь с нашей <a href="#" class="feedback__link link">политикой конфиденциальности</a>
+                </p>
+                <button type="submit" class="button-submit feedback__button-submit link"> 
+                    Отправить  
+                    <img src="img/icons/dropdown-white.svg">
+                </button>
+            </form>
+        </div>
 
         <!-- Бургер -->
 
         <div class="navigation">
-            <div class="burger__fix"></div>
+            <div class="burger__clearfix"></div>
             <div class="burger">
                 <nav class="burger__upper-menu">
                     <div class="burger__upper-menu--left">
@@ -94,55 +145,6 @@
             </div>
         </div>
 
-        <!-- Обратная связь -->
-
-        <div class="feedback">
-            <div>
-                <a href="#" class="icon feedback__icon feedback__icon--close">
-                    <img src="img/icons/menu_burger.svg" alt="icon-menu">
-                </a>
-            </div>
-            <div class="title">
-                Обратная связь
-            </div>
-            <form class='form-feedback' action="#" name="call" method="post">
-                <input type="text" name="name" placeholder="Имя" class="form-feedback__item form-feedback__input link">
-                <input type="tel" name="tel" placeholder="Телефон" class="form-feedback__item form-feedback__input link">
-                <input type="email" name="email" placeholder="Электронная почта" class="form-feedback__item form-feedback__input link">
-                <textarea name="message" class="form-feedback__item form-feedback__textarea link" placeholder="Сообщение"></textarea>
-                <p class="feedback__text">
-                    Нажимая “отправить”, вы даете согласие на <a href="#" class="feedback__link link">обработку персональных данных</a> 
-                    и соглашаетесь с нашей <a href="#" class="feedback__link link">политикой конфиденциальности</a>
-                </p>
-                <button type="submit" class="button-submit feedback__button-submit link"> 
-                    Отправить  
-                    <img src="img/icons/dropdown-white.svg">
-                </button>
-            </form>
-        </div>
-
-        <!-- Обратный звонок -->
-
-        <div class="feedback--call">
-            <a href="#" class="icon feedback__icon feedback__call--close">
-                <img src="img/icons/menu_burger.svg" alt="icon-menu">
-            </a>
-            <div class="title">
-                Заказать звонок
-            </div>
-            <form class='form-feedback' action="#" name="call" method="post">
-                <input type="tel" name="tel" placeholder="Телефон" class="form-feedback__item form-feedback__input link">
-                <p class="feedback__text">
-                    Нажимая “отправить”, вы даете согласие на <a href="#" class="feedback__link link">обработку персональных данных</a> 
-                    и соглашаетесь с нашей <a href="#" class="feedback__link link">политикой конфиденциальности</a>
-                </p>
-                <button type="submit" class="button-submit feedback__button-submit link"> 
-                    Отправить  
-                    <img src="img/icons/dropdown-white.svg">
-                </button>
-            </form>
-        </div>
-
         <!-- Основной контент -->
         
         <div class="container">
@@ -194,12 +196,11 @@
             <!-- Основной контент -->
 
             <main class="content">
-        
                 <div class="content__top indent">
                     <div class="title">
-                        <h1 class="title__text">
+                        <h2 class="title__text">
                             Услуги и сервисы
-                        </h1>
+                        </h2>
                     </div>
                 
                     <!-- Верхнее меню на больших размерах -->
@@ -281,7 +282,7 @@
                 <article class="content-post container-brands">
 
                     <div class="header-post indent">
-                        <p class="header-post__title">Ремонт техники различных брендов</p>
+                        <h2 class="header-post__title">Ремонт техники различных брендов</h2>
                     </div>
 
                     <div class="content-post swiper-container indent">
@@ -401,7 +402,7 @@
                 <article class="content-post container-types">
 
                     <div class="header-post indent">
-                        <p class="header-post__title">Ремонт различных видов техники</p>
+                        <h2 class="header-post__title">Ремонт различных видов техники</h2>
                     </div>
 
                     <div class="content-post swiper-container indent">
@@ -499,7 +500,7 @@
                     <!-- Таблица на средний и большой размер -->
 
                     <div class="header-post indent">
-                        <p class="header-post__title">Цены на услуги</p>
+                        <h2 class="header-post__title">Цены на услуги</h2>
                     </div>
 
                     <div class="content-post container-prices__content indent">
@@ -573,16 +574,16 @@
                             <div class="swiper-wrapper">
                                 <div class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
-                                        <p class="title__item">Ремонтные услуги</p>
+                                        <h2 class="title__item">Ремонтные услуги</h2>
                                         Диагностика
                                     </div>
                                     <div class="container-prices__text">
-                                        <p class="title__item">Цена</p>
+                                        <h2 class="title__item">Цена</h2>
                                         Бесплатно
                                     </div>
                                     <div class="container-prices__text--width-button">
                                         <div class="text">
-                                            <p class="title__item">Срок</p>
+                                            <h2 class="title__item">Срок</h2>
                                             30 мин
                                         </div>
                                         <button type="button" class="button-order container-prices__button link">
@@ -594,16 +595,16 @@
 
                                 <div class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
-                                        <p class="title__item">Ремонтные услуги</p>
+                                        <h2 class="title__item">Ремонтные услуги</h2>
                                         Замена дисплея
                                     </div>
                                     <div class="container-prices__text">
-                                        <p class="title__item">Цена</p>
+                                        <h2 class="title__item">Цена</h2>
                                         1000 &#8381;
                                     </div>
                                     <div class="container-prices__text--width-button">
                                         <div class="text">
-                                            <p class="title__item">Срок</p>
+                                            <h2 class="title__item">Срок</h2>
                                             30-120 мин
                                         </div>
                                         <button type="button" class="button-order container-prices__button link">
@@ -615,16 +616,16 @@
 
                                 <div class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
-                                        <p class="title__item">Ремонтные услуги</p>
+                                        <h2 class="title__item">Ремонтные услуги</h2>
                                         Замена полифонического динамика
                                     </div>
                                     <div class="container-prices__text">
-                                        <p class="title__item">Цена</p>
+                                        <h2 class="title__item">Цена</h2>
                                         1000 &#8381;
                                     </div>
                                     <div class="container-prices__text--width-button">
                                         <div class="text">
-                                            <p class="title__item">Срок</p>
+                                            <h2 class="title__item">Срок</h2>
                                             30-120 мин
                                         </div>
                                         <button type="button" class="button-order container-prices__button link">
@@ -636,16 +637,16 @@
 
                                 <div class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
-                                        <p class="title__item">Ремонтные услуги</p>
+                                        <h2 class="title__item">Ремонтные услуги</h2>
                                         Тестирование с выдачей технического заключения
                                     </div>
                                     <div class="container-prices__text">
-                                        <p class="title__item">Цена</p>
+                                        <h2 class="title__item">Цена</h2>
                                         1000 &#8381;
                                     </div>
                                     <div class="container-prices__text--width-button">
                                         <div class="text">
-                                            <p class="title__item">Срок</p>
+                                            <h2 class="title__item">Срок</h2>
                                             30-120 мин
                                         </div>
                                         <button type="button" class="button-order container-prices__button link">
@@ -657,16 +658,16 @@
 
                                 <div class="container-prices__slide swiper-slide">
                                     <div class="container-prices__text">
-                                        <p class="title__item">Ремонтные услуги</p>
+                                        <h2 class="title__item">Ремонтные услуги</h2>
                                         Замена программного обеспечения
                                     </div>
                                     <div class="container-prices__text">
-                                        <p class="title__item">Цена</p>
+                                        <h2 class="title__item">Цена</h2>
                                         1000 &#8381;
                                     </div>
                                     <div class="container-prices__text--width-button">
                                         <div class="text">
-                                            <p class="title__item">Срок</p>
+                                            <h2 class="title__item">Срок</h2>
                                             30-120 мин
                                         </div>
                                         <button type="button" class="button-order container-prices__button link">

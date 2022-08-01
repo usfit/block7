@@ -1,9 +1,8 @@
 @import 'colors.scss';
 
-.burger__fix {
-  display: flex;
-  flex-direction: column;
+.burger__clearfix {
   width: 276px;
+  clear: both;
 }
 
 
@@ -18,11 +17,11 @@
   height: 94vh;
   position: fixed;
   background-color: $background-color-white;
+
   @media (min-width: 1120px) {
     width: 276px;
     max-height: 888px;
     box-sizing: border-box;
-
   }
   @media (max-width: 1119.9px) {
     min-height: 650px;
