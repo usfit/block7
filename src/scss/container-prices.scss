@@ -29,9 +29,10 @@
 
 .title__item {
     text-align: left;
-    font-weight: normal;
+    font-weight: medium;
     color: $title-color;
     line-height: 16px;
+    size: 14px;
     background-color: $background-color;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -96,7 +97,7 @@
     width: 421px;
 
     @media (max-width: 767.9px) {
-        width: 300px;
+        width: 288px;
         overflow: hidden;
     }
     
@@ -111,6 +112,9 @@
 
 .container-prices__button--description {
     position: relative;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 24px;
 
     &::after {
         content: '';
@@ -120,7 +124,7 @@
         background-image: url('/img/icons/dropdown.svg');
         background-repeat: no-repeat;
         background-position: center;
-        bottom: -5px;
+        bottom: -2px;
 
     }
     

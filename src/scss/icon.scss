@@ -18,8 +18,11 @@
     }
 }
 
+.icon--profile {
+    position: relative;
+}
 
-@media (min-width: 768.1px) and (max-width: 1119.9px) {
+@media (min-width: 768px) and (max-width: 1119.9px) {
     .icon--profile::after {
         content: '';
         position: absolute;

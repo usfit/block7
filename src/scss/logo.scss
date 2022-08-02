@@ -6,8 +6,8 @@
     height: 50px;
 }
 
-@media (max-width: 768px) {
-    .logo__psevdo::after {
+@media (max-width: 767.9px) {
+    .logo::after {
         content: '';
         position: absolute;
         width: 2px;
@@ -19,8 +19,8 @@
     }
 }
 
-@media (min-width: 768.1px) and (max-width: 1119.9px) {
-    .logo__psevdo::before {
+@media (min-width: 768px) and (max-width: 1119.9px) {
+    .logo::before {
         content: '';
         position: absolute;
         width: 2px;

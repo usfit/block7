@@ -1,38 +1,44 @@
 @import 'colors.scss';
 
 .footer {
-    display: flex;
-    border-top: 1px solid $border-menu-color;
-    justify-content: space-between;
-    padding-top: 32px;
-    padding-bottom: 25px;
-    align-items: center;
-    list-style: none;
+}
 
+.footer__list {
+  display: flex;
+  border-top: 1px solid $border-menu-color;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 21px;
+  align-items: center;
+  list-style: none;
+
+  .footer__item {
+    color: $title-color;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: medium;
+  }
+
+  @media (max-width: 767.9px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1119.9px) {
+  
     .footer__item {
-      color: $title-color
-    }
-  
-    @media (max-width: 767.9px) {
-      flex-direction: column;
-      text-align: center;
-      gap: 16px;
-      padding-top: 16px;
-      padding-bottom: 19px;
-    }
-  
-    @media (min-width: 768px) and (max-width: 1119.9px) {
-    
-      .footer__item {
-        padding: 0;
-        margin: 0;
-        width: 215px;
-      }
-    }
-  
-    @media (min-width: 1120px) {
-      .footer__item {
-        max-width: 330px;
-      }
+      padding: 0 24px;
+      margin: 0;
+      width: 215px;
     }
   }
+
+  @media (min-width: 1120px) {
+    .footer__item {
+      max-width: 330px;
+    }
+  }
+}

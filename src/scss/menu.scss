@@ -2,6 +2,7 @@
 
 .menu {
     display: flex;
+
     @media (min-width: 1120px) {
         gap: 10px;
         flex-wrap: wrap;
@@ -42,7 +43,8 @@
     font-family: "TT Lakes";
     height: 24px;
     font-size: 16px;
-    color: #7E7E82;
+    font-weight: medium;
+    color: $title-color;
     letter-spacing: -0.2px;
     white-space: nowrap;
 }

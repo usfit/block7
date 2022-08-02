@@ -3,12 +3,12 @@
     max-width: 1120px;
     justify-content: space-between;
 
-    @media (max-width: 768px) {
+    @media (max-width: 767.9px) {
         flex-direction: column;
         gap: 28px;
     }
 
-    @media (min-width: 768.1px) and (max-width: 1120px) {
+    @media (min-width: 768px) and (max-width: 1120px) {
         gap: 48px;
     }
 
@@ -55,7 +55,8 @@
     border-radius: 6px;
 
     @media (max-width: 768px) {
-        margin: 0 -16px 0 -16px;
+        margin-left: -16px;
+        margin-right: -16px;
     }
 
     @media (min-width: 768.1px) and (max-width: 1119.9px) {
