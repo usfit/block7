@@ -538,6 +538,8 @@ ul {
     display: none; } }
 
 .content {
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto; }
   @media (max-width: 767.9px) {
     .content {
