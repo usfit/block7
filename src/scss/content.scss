@@ -1,4 +1,6 @@
 .content {
+    display: flex;
+    flex-direction: column;
     flex: 1 0 auto;
     @media (max-width: 767.9px) {
         gap: 24px;
