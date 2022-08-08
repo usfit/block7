@@ -14,10 +14,23 @@
     }
 
     @media (min-width: 1120px) {
-        gap: 50px;
         padding-bottom: 50px;
     }
 
+    @media (max-width: 1119.9px) {
+        .upper-menu__block {
+            display: none;
+        }
+    }
+}
+
+.content__main {
+    display: flex;
+    flex-direction: column;
+       @media (min-width: 1120px) {
+        gap: 50px;
+        padding-bottom: 50px;
+    } 
 }
 
 .content__top {

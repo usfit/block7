@@ -2,10 +2,6 @@
 @import 'colors';
 
 .button-read-more {
-    background-color: inherit;
-    padding: 0;
-    margin: 0;
-    border: none;
     display: flex;
     gap: 8px;
     width: max-content;
@@ -16,4 +12,10 @@
     color: $text-color;
     font-weight: medium;
     font-size: 16px;
+}
+
+.container-types__button, .container-brands__button {
+    @media (max-width: 767.9px) {
+        display: none;
+    }
 }

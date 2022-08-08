@@ -9,7 +9,7 @@
   justify-content: space-between;
   padding-top: 32px;
   padding-bottom: 21px;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
 
   .footer__item {
@@ -21,6 +21,7 @@
 
   @media (max-width: 767.9px) {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 16px;
     padding-top: 16px;
@@ -28,9 +29,10 @@
   }
 
   @media (min-width: 768px) and (max-width: 1119.9px) {
+
+    padding: 32px 24px 21px 24px;
   
     .footer__item {
-      padding: 0 24px;
       margin: 0;
       width: 215px;
     }

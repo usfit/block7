@@ -3,7 +3,6 @@ let burgerClose = document.querySelector('.burger__icon--close');
 let navigation = document.querySelector('.navigation');
 let mask = document.querySelector('.mask');
 let swiper = document.querySelectorAll('.swiper-wrapper');
-// let container = document.querySelector('.container');
 
 let openCloseMask = function() {
     mask.classList.toggle('mask--close');

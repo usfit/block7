@@ -1,14 +1,18 @@
 @import 'colors.scss';
 
 .link {
-    color: $text-color;
-    text-decoration: none;
-    opacity: 1;
-    transition: 0.3s;
-    cursor: pointer;
 
     &:hover {
         opacity: 0.5;
         transition: 0.3s;
     }
-}
+
+    &.button-read-more:hover, &.read-more:hover {
+        opacity: 1;
+    }
+};
+
+.container-prices__offer .button-read-more:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+};

@@ -9,6 +9,17 @@
     @media (max-width: 767.9px) {
         gap: 16px;
         padding: 0 16px;
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 32px;
+            top: 10px;
+            right: -20%;
+            border-radius: 1px;
+            background-color: $border-items-color;
+        }
     }
 
     @media (min-width: 768px) and (max-width: 1119.9px) {
@@ -21,6 +32,17 @@
         .upper-menu__block--main {
             gap: 42px;
         }
+
+        .logo::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 32px;
+            top: 10px;
+            left: -20%;
+            border-radius: 1px;
+            background-color: $border-items-color;
+        }
     }
 }
 
@@ -31,6 +53,12 @@
 
     @media (min-width: 768px) {
         gap: 32px;
+    }
+}
+
+.upper-menu__block--hidden {
+    @media (max-width: 767.9px) {
+        display: none;
     }
 }
 

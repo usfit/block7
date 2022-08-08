@@ -40,3 +40,14 @@
     top: 218px;
   }
 }
+
+.swiper-slide:hover {
+  @media (max-width: 767.9px) {
+    box-shadow: 10px 5px 10px rgba(14, 24, 80, 0.2);
+    transition: 0.3s;
+  }
+  @media (min-width: 768px) {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+}

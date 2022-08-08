@@ -13,9 +13,16 @@
     padding: 40px 32px 75px;
     background-color: $background-color-white;
     gap: 24px;
+    height: 94vh;
     @media (min-width: 1120px) {
         max-height: 940px;
         height: 94vh;
+
+        .icon {
+            position: absolute;
+            left: -72px;
+            top: 32px;
+        }
       }
 
     @media (min-width: 768px) {
@@ -34,13 +41,13 @@
     }
 }
 
-.popup__icon {
-    @media (min-width: 1120px) {
-        position: absolute;
-        left: -72px;
-        top: 32px;
-    }
-}
+// .popup__icon {
+//     @media (min-width: 1120px) {
+//         position: absolute;
+//         left: -72px;
+//         top: 32px;
+//     }
+// }
 
 .popup--open {
     position: fixed;

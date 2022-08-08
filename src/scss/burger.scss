@@ -14,13 +14,12 @@
   padding: 19px 24px 32px 24px;
   max-width: 320px;
   gap: 42px;
-  height: 94vh;
+  height: 97vh;
   position: fixed;
   background-color: $background-color-white;
 
   @media (min-width: 1120px) {
     width: 276px;
-    max-height: 888px;
     box-sizing: border-box;
   }
   @media (max-width: 1119.9px) {
@@ -84,7 +83,7 @@
   background-color: #41F6D7;
   border-radius: 0 4px 4px 0;
   left: -24px;
-  top: -4px;
+  top: -8px;
   opacity: 0;
 }
 
@@ -129,6 +128,12 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.burger__icon--close {
+  @media (min-width: 1120px) {
+    display: none;
+  }
 }
 
 
