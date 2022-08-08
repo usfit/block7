@@ -1070,7 +1070,7 @@ button {
     position: absolute;
     width: 24px;
     height: 27px;
-    background-image: url("/img/icons/dropdown.svg");
+    background-image: url(./static/dropdown.svg);
     background-repeat: no-repeat;
     background-position: center;
     bottom: -2px; }
