@@ -14,15 +14,15 @@
         <div class="mask"></div>
         
 
-        <div class="popup">
+        <aside class="popup">
             <div>
-                <a href="#" class="icon popup__icon popup__icon--close">
+                <a href="#" class="icon popup__icon--close">
                     <img src="img/icons/menu_burger.svg" alt="icon-menu">
                 </a>
             </div>
-            <h2 class="title">
+            <p class="title">
                 Обратная связь
-            </h2>
+            </p>
             <form class="popup__form" action="#" name="call" method="post">
                 <input type="text" name="name" placeholder="Имя" class="popup__item popup__input link">
                 <input type="tel" name="tel" placeholder="Телефон" class="popup__item popup__input link">
@@ -37,17 +37,17 @@
                     <img src="img/icons/dropdown-white.svg">
                 </button>
             </form>
-        </div>
+        </aside>
 
         
 
-        <div class="popup popup--call">
-            <a href="#" class="icon popup__icon popup__call--close">
+        <aside class="popup popup--call">
+            <a href="#" class="icon popup__call--close">
                 <img src="img/icons/menu_burger.svg" alt="icon-menu">
             </a>
-            <h2 class="title">
+            <p class="title">
                 Заказать звонок
-            </h2>
+            </p>
             <form class="popup__form" action="#" name="call" method="post">
                 <input type="tel" name="tel" placeholder="Телефон" class="popup__item popup__input link">
                 <p class="popup__text">
@@ -59,24 +59,24 @@
                     <img src="img/icons/dropdown-white.svg">
                 </button>
             </form>
-        </div>
+        </aside>
 
         
 
-        <div class="navigation">
+        <aside class="navigation">
             <div class="burger__clearfix"></div>
             <div class="burger">
                 <nav class="burger__upper-menu">
                     <div class="burger__upper-menu--left">
-                        <a href="#" class="icon burger__icon--close size--large">
-                            <img src="img/icons/menu_burger.svg" alt="icon-menu" class="menu__icon">
+                        <a href="#" class="icon burger__icon--close">
+                            <img src="img/icons/menu_burger.svg" alt="icon-menu">
                         </a>
                         <a href="#" class="logo">
                             <img src="img/icons/Group.svg" alt="logo" class="logo__image">
                         </a>
                     </div>
                     <a href="#" class="icon">
-                        <img src="img/icons/menu_search.svg" alt="icon-search" class="menu__icon">
+                        <img src="img/icons/menu_search.svg" alt="icon-search">
                     </a>
                 </nav>
 
@@ -111,13 +111,13 @@
                         <div class="burger__contact-block">
                             <div class="burger__icon-block">
                                 <a href="#" class="icon burger-call__icon--open">
-                                    <img src="img/icons/call.svg" alt="icon-call" class="menu__icon">
+                                    <img src="img/icons/call.svg" alt="icon-call">
                                 </a>
                                 <a href="#" class="icon burger-chat__icon--open">
-                                    <img src="img/icons/chat.svg" alt="icon-chat" class="menu__icon">
+                                    <img src="img/icons/chat.svg" alt="icon-chat">
                                 </a>
                                 <a href="#" class="icon">
-                                    <img src="img/icons/profile.svg" alt="icon-profile" class="menu__icon">
+                                    <img src="img/icons/profile.svg" alt="icon-profile">
                                 </a>
                             </div>
                             <a href="#" class="link burger__contact-block--mail">
@@ -142,7 +142,7 @@
                     </div>
                 </nav>
             </div>
-        </div>
+        </aside>
 
         
         
@@ -150,7 +150,7 @@
 
             
 
-            <header class="header size--large">
+            <header class="header">
                 <nav class="menu upper-menu">
                     <div class="upper-menu__block upper-menu__block--left">
                         <a href="#" class="icon burger__icon--open">
@@ -168,16 +168,16 @@
 
                     <div class="upper-menu__block upper-menu__block--main">
                         <div class="upper-menu__block upper-menu__block--hidden">
-                            <a href="#" class="icon call__icon--open size--small">
+                            <a href="#" class="icon call__icon--open">
                                 <img src="img/icons/call.svg" alt="icon-call">
                             </a>
 
-                            <a href="#" class="icon chat__icon--open size--small">
+                            <a href="#" class="icon chat__icon--open">
                                 <img src="img/icons/chat.svg" alt="icon-chat">
                             </a>
 
                             <div class="icon--profile">
-                                <a href="#" class="size--small icon">
+                                <a href="#" class="icon">
                                     <img src="img/icons/profile.svg" alt="icon-profile">
                                 </a>
                             </div>
@@ -199,25 +199,25 @@
             
 
             <div class="content">
-                <div class="content__top indent">
+                <div class="content__top wrapper">
                     <div class="title">
-                        <h2 class="title__text">
+                        <p class="title__text">
                             Услуги и сервисы
-                        </h2>
+                        </p>
                     </div>
                 
                     
 
-                    <nav class="upper-menu__block size--small size--medium">
+                    <nav class="upper-menu__block">
                         <a href="#" class="icon--big link-text link">
-                            <span class="upper-menu__text">Оставить заявку</span>
+                            <span class="upper-link-text">Оставить заявку</span>
                             <div class="icon">
                                 <img src="img/icons/repair.svg" alt="icon-repair" class="upper-menu__icon">
                             </div>
                         </a>
 
                         <a href="#" class="icon--big link-text link">
-                            <span class="upper-menu__text">Статус ремонта</span>
+                            <span class="upper-link-text">Статус ремонта</span>
                             <div class="icon">
                                 <img src="img/icons/checkstatus.svg" alt="icon-checkstatus" class="upper-menu__icon">
                             </div>
@@ -227,72 +227,84 @@
 
                 
 
-                <nav class="menu indent">
+                <ul class="menu wrapper">
 
-                    <a href="#" class="menu__item link-text">
-                        <span class="menu__text">Ремонтируемые бренды</span>
-                    </a>
+                    <li>
+                        <a href="#" class="menu__item link-text">
+                            <span class="link-text">Ремонтируемые бренды</span>
+                        </a>
+                    </li>
 
-                    <a href="#" class="menu__item link-text">
-                        <span class="menu__text">Ремонтируемые устройства</span>
-                    </a>
+                    <li>
+                        <a href="#" class="menu__item link-text">
+                            <span class="link-text">Ремонтируемые устройства</span>
+                        </a>
+                    </li>
 
-                    <a href="#" class="menu__item link-text">
-                        <span class="menu__text">Цены на услуги</span>
-                    </a>
+                    <li>
+                        <a href="#" class="menu__item link-text">
+                            <span class="link-text">Цены на услуги</span>
+                        </a>
+                    </li>
 
-                    <a href="#" class="menu__item link-text">
-                        <span class="menu__text">Адреса сервисных центров</span>
-                    </a>
+                    <li>
+                        <a href="#" class="menu__item link-text">
+                            <span class="link-text">Адреса сервисных центров</span>
+                        </a>
+                    </li>
 
-                    <a href="#" class="menu__item link-text">
-                        <span class="menu__text">Специальные цены</span>
-                    </a>
+                    <li>
+                        <a href="#" class="menu__item link-text">
+                            <span class="link-text">Специальные цены</span>
+                        </a>
+                    </li>
 
-                    <a href="#" class="menu__item link-text">
-                        <span class="menu__text">Отзывы</span>
-                    </a>
-                </nav>
+                    <li>
+                        <a href="#" class="menu__item link-text">
+                            <span class="link-text">Отзывы</span>
+                        </a>
+                    </li>
+                </ul>
                 
 
                 
 
-                <main>
-                    <article class="block indent">
+                <main class="content__main">
+                    <section class="block wrapper">
                         <div class="block__main">
                             <div class="block__text">
-                                <p class="size--all">
+                                <p>
                                     Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
                                     Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                                 </p>
-                                <p class="size--small">
-                                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class="size--small size--medium">
+                                <p> <br>
+                                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span>
                                         , что подтверждает большое количество постоянных клиентов. Мы гордимся тем, 
                                         что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
                                 </p>
                             </div>
 
-                            <a href="#" class="read-more link link-text">
-                                <img src="img/icons/expand.svg" alt="read-more-icons" class="read-more__icon">
-                                <p class="read-more__text">Читать далее</p>
-                            </a>
+                            <button type="button" class="button-read-more read-more link">
+                                <img src="img/icons/read_more.svg" alt="read-more" class="read-more__icon">
+                                <p class="button-read-more__text">Читать далее</p>
+                            </button>
                         </div>
 
                         <img src="img/picture-copy.jpg" alt="picture block" class="block__picture">
-                    </article>
+                    </section>
 
                     
 
-                    <article class="content-post container-brands">
+                    <section class="content-post container-brands">
 
-                        <div class="header-post indent">
-                            <h2 class="header-post__title">Ремонт техники различных брендов</h2>
+                        <div class="header-post wrapper">
+                            <p class="header-post__title">Ремонт техники различных брендов</p>
                         </div>
 
-                        <div class="content-post swiper-container indent">
+                        <div class="content-post swiper-container wrapper">
                             <ul class="content-post__list container-brands__list swiper-wrapper">
-                                <li class="content-post__item container-brands__brand swiper-slide link">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                <li class="content-post__item container-brands__brand swiper-slide">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/1_lenovo.svg" alt="logo lenovo">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -301,7 +313,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/2_samsung.svg" alt="logo samsung">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -310,7 +322,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/3_apple.svg" alt="logo apple">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -319,7 +331,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/4_ viewSonic.svg" alt="logo viewSonic">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -328,7 +340,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/5_bosch.svg" alt="logo bosch">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -337,7 +349,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/6_hp.svg" alt="logo hp">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -346,7 +358,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/7_acer.svg" alt="logo acer">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -355,7 +367,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/8_sony.svg" alt="logo sony">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -364,7 +376,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/1_lenovo.svg" alt="logo lenovo">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -373,7 +385,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/2_samsung.svg" alt="logo samsung">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -382,7 +394,7 @@
                                 </li>
 
                                 <li class="content-post__item container-brands__brand swiper-slide">
-                                    <a href="#" class="content-post__link container-brands__link link">
+                                    <a href="#" class="content-post__link container-brands__link">
                                         <img src="img/brands/3_apple.svg" alt="logo apple">
                                         <span class="dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -394,27 +406,27 @@
 
                             <div class="swiper-pagination"></div>
 
-                            <button type="button" class="button-read-more container-brands__button link size--small">
+                            <button type="button" class="button-read-more container-brands__button link">
                                 <img src="img/icons/read_more.svg" alt="read-more">
                                 <p class="button-read-more__text">Показать все</p>
                             </button>
                         </div>
-                    </article>
+                    </section>
 
                     
 
-                    <article class="content-post container-types">
+                    <section class="content-post container-types">
 
-                        <div class="header-post indent">
-                            <h2 class="header-post__title">Ремонт различных видов техники</h2>
+                        <div class="header-post wrapper">
+                            <p class="header-post__title">Ремонт различных видов техники</p>
                         </div>
 
-                        <div class="content-post swiper-container indent">
+                        <div class="content-post swiper-container wrapper">
 
                             <ul class="content-post__list swiper-wrapper container-types__list">
 
                                 <li class="content-post__item container-types__type swiper-slide">
-                                    <a href="#" class="content-post__link container-types__link link">
+                                    <a href="#" class="content-post__link container-types__link">
                                         <span class="content-post__text container-types__text">Ремонт ноутбуков</span>
                                         <span class="dropdown container-types__dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -423,7 +435,7 @@
                                 </li>
 
                                 <li class="content-post__item container-types__type swiper-slide">
-                                    <a href="#" class="content-post__link container-types__link link">
+                                    <a href="#" class="content-post__link container-types__link">
                                         <span class="content-post__text container-types__text">Ремонт планшетов</span>
                                         <span class="dropdown container-types__dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -432,7 +444,7 @@
                                 </li>
 
                                 <li class="content-post__item container-types__type swiper-slide">
-                                    <a href="#" class="content-post__link container-types__link link">
+                                    <a href="#" class="content-post__link container-types__link">
                                         <span class="content-post__text container-types__text">Ремонт ПК</span>
                                         <span class="dropdown container-types__dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -441,7 +453,7 @@
                                 </li>
 
                                 <li class="content-post__item container-types__type swiper-slide">
-                                    <a href="#" class="content-post__link container-types__link link">
+                                    <a href="#" class="content-post__link container-types__link">
                                         <span class="content-post__text container-types__text">Ремонт мониторов</span>
                                         <span class="dropdown container-types__dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -450,7 +462,7 @@
                                 </li>
 
                                 <li class="content-post__item container-types__type swiper-slide">
-                                    <a href="#" class="content-post__link container-types__link link">
+                                    <a href="#" class="content-post__link container-types__link">
                                         <span class="content-post__text container-types__text">Ремонт телефонов</span>
                                         <span class="dropdown container-types__dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -459,7 +471,7 @@
                                 </li>
 
                                 <li class="content-post__item container-types__type swiper-slide">
-                                    <a href="#" class="content-post__link container-types__link link">
+                                    <a href="#" class="content-post__link container-types__link">
                                         <span class="content-post__text container-types__text">Ремонт ноутбуков</span>
                                         <span class="dropdown container-types__dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -468,7 +480,7 @@
                                 </li>
 
                                 <li class="content-post__item container-types__type swiper-slide">
-                                    <a href="#" class="content-post__link container-types__link link">
+                                    <a href="#" class="content-post__link container-types__link">
                                         <span class="content-post__text container-types__text">Ремонт планшетов</span>
                                         <span class="dropdown container-types__dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -477,7 +489,7 @@
                                 </li>
 
                                 <li class="content-post__item container-types__type swiper-slide">
-                                    <a href="#" class="content-post__link container-types__link link">
+                                    <a href="#" class="content-post__link container-types__link">
                                         <span class="content-post__text container-types__text">Ремонт ПК</span>
                                         <span class="dropdown container-types__dropdown">
                                             <img src="img/icons/dropdown.svg" alt="dropdown">
@@ -489,26 +501,26 @@
 
                             <div class="swiper-pagination"></div>
 
-                            <button type="button" class="button-read-more container-types__button link size--small">
+                            <button type="button" class="button-read-more container-types__button link">
                                 <img src="img/icons/read_more.svg" alt="read-more">
                                 <p class="button-read-more__text">Показать все</p>
                             </button>
 
                         </div>
-                    </article>
+                    </section>
 
                     
 
-                    <article class="container-prices">
+                    <section class="container-prices">
 
                         
 
-                        <div class="header-post indent">
-                            <h2 class="header-post__title">Цены на услуги</h2>
+                        <div class="header-post wrapper">
+                            <p class="header-post__title">Цены на услуги</p>
                         </div>
 
-                        <div class="content-post container-prices__content indent">
-                            <table class="container-prices__list size--small">
+                        <div class="content-post container-prices__content wrapper">
+                            <table class="container-prices__list">
                                 <tr class="container-prices__title">
                                     <td class="title__item">Ремонтные услуги</td>
                                     <td class="title__item">Цена</td>
@@ -574,21 +586,21 @@
 
                             
 
-                            <div class="swiper-container size--large size--medium">
+                            <article class="swiper-container">
                                 <ul class="swiper-wrapper">
                                     <li class="container-prices__slide swiper-slide">
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Ремонтные услуги</h2>
-                                            Диагностика
+                                            <p class="title__item">Ремонтные услуги</p>
+                                            <p>Диагностика</p>
                                         </div>
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Цена</h2>
-                                            Бесплатно
+                                            <p class="title__item">Цена</p>
+                                            <p>Бесплатно</p>
                                         </div>
                                         <div class="container-prices__text--width-button">
                                             <div class="text">
-                                                <h2 class="title__item">Срок</h2>
-                                                30 мин
+                                                <p class="title__item">Срок</p>
+                                                <p>30 мин</p>
                                             </div>
                                             <button type="button" class="button-order container-prices__button link">
                                                 <p class="button-order__text">ЗАКАЗАТЬ</p>
@@ -599,17 +611,17 @@
 
                                     <li class="container-prices__slide swiper-slide">
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Ремонтные услуги</h2>
-                                            Замена дисплея
+                                            <p class="title__item">Ремонтные услуги</p>
+                                            <p>Замена дисплея</p>
                                         </div>
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Цена</h2>
-                                            1000 &#8381;
+                                            <p class="title__item">Цена</p>
+                                            <p>1000 &#8381;</p>
                                         </div>
                                         <div class="container-prices__text--width-button">
                                             <div class="text">
-                                                <h2 class="title__item">Срок</h2>
-                                                30-120 мин
+                                                <p class="title__item">Срок</p>
+                                                <p>30-120 мин</p>
                                             </div>
                                             <button type="button" class="button-order container-prices__button link">
                                                 <p class="button-order__text">ЗАКАЗАТЬ</p>
@@ -620,17 +632,17 @@
 
                                     <li class="container-prices__slide swiper-slide">
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Ремонтные услуги</h2>
-                                            Замена полифонического динамика
+                                            <p class="title__item">Ремонтные услуги</p>
+                                            <p>Замена полифонического динамика</p>
                                         </div>
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Цена</h2>
-                                            1000 &#8381;
+                                            <p class="title__item">Цена</p>
+                                            <p>1000 &#8381;</p>
                                         </div>
                                         <div class="container-prices__text--width-button">
                                             <div class="text">
-                                                <h2 class="title__item">Срок</h2>
-                                                30-120 мин
+                                                <p class="title__item">Срок</p>
+                                                <p>30-120 мин</p>
                                             </div>
                                             <button type="button" class="button-order container-prices__button link">
                                                 <p class="button-order__text">ЗАКАЗАТЬ</p>
@@ -641,17 +653,17 @@
 
                                     <li class="container-prices__slide swiper-slide">
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Ремонтные услуги</h2>
-                                            Тестирование с выдачей технического заключения
+                                            <p class="title__item">Ремонтные услуги</p>
+                                            <p>Тестирование с выдачей технического заключения</p>
                                         </div>
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Цена</h2>
-                                            1000 &#8381;
+                                            <p class="title__item">Цена</p>
+                                            <p>1000 &#8381;</p>
                                         </div>
                                         <div class="container-prices__text--width-button">
                                             <div class="text">
-                                                <h2 class="title__item">Срок</h2>
-                                                30-120 мин
+                                                <p class="title__item">Срок</p>
+                                                <p>30-120 мин</p>
                                             </div>
                                             <button type="button" class="button-order container-prices__button link">
                                                 <p class="button-order__text">ЗАКАЗАТЬ</p>
@@ -662,17 +674,17 @@
 
                                     <li class="container-prices__slide swiper-slide">
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Ремонтные услуги</h2>
-                                            Замена программного обеспечения
+                                            <p class="title__item">Ремонтные услуги</p>
+                                            <p>Замена программного обеспечения</p>
                                         </div>
                                         <div class="container-prices__text">
-                                            <h2 class="title__item">Цена</h2>
-                                            1000 &#8381;
+                                            <p class="title__item">Цена</p>
+                                            <p>1000 &#8381;</p>
                                         </div>
                                         <div class="container-prices__text--width-button">
                                             <div class="text">
-                                                <h2 class="title__item">Срок</h2>
-                                                30-120 мин
+                                                <p class="title__item">Срок</p>
+                                                <p>30-120 мин</p>
                                             </div>
                                             <button type="button" class="button-order container-prices__button link">
                                                 <p class="button-order__text">ЗАКАЗАТЬ</p>
@@ -684,12 +696,12 @@
                                 </ul>
 
                                 <div class="swiper-pagination"></div>
-                            </div>    
+                            </article>    
                         </div>
 
                         
 
-                        <div class="container-prices__offer indent">
+                        <div class="container-prices__offer wrapper">
                             <div class="container-prices__description">
                                 Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. 
                                 Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
@@ -699,7 +711,7 @@
                             </button>
                         </div>
 
-                    </article>
+                    </section>
                 </main>
             </div>
 
@@ -707,16 +719,16 @@
 
             <footer class="footer">
                 <ul class="footer__list">
-                    <li href="#" class="footer__item">
-                        © 2019 CPS <br> Разработано командой Apesong
+                    <li class="footer__item">
+                        <span>© 2019 CPS <br> Разработано командой Apesong</span>
                     </li>
                     <li>
                         <a href="#" class="footer__item link">
                             Политика конфиденциальности
                         </a>
                     </li>
-                    <li href="#" class="footer__item">
-                        Информация, размещенная на данной странице, не является публичной офертой
+                    <li class="footer__item">
+                        <span>Информация, размещенная на данной странице, не является публичной офертой</span>
                     </li>
                 </ul>
             </footer>
