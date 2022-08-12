@@ -4,9 +4,6 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
-body {
-  margin: 0; }
-
 main {
   display: block; }
 
@@ -176,10 +173,6 @@ a {
   transition: 0.3s;
   cursor: pointer; }
 
-ul {
-  margin: 0;
-  padding: 0; }
-
 li {
   list-style: none; }
 
@@ -189,14 +182,8 @@ li {
 .hidden {
   display: none; }
 
-p {
-  margin: 0;
-  padding: 0; }
-
 button {
   background-color: inherit;
-  padding: 0;
-  margin: 0;
   border: none;
   cursor: pointer; }
 
@@ -237,9 +224,6 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
-body {
-  margin: 0; }
-
 main {
   display: block; }
 
@@ -409,10 +393,6 @@ a {
   transition: 0.3s;
   cursor: pointer; }
 
-ul {
-  margin: 0;
-  padding: 0; }
-
 li {
   list-style: none; }
 
@@ -422,14 +402,8 @@ li {
 .hidden {
   display: none; }
 
-p {
-  margin: 0;
-  padding: 0; }
-
 button {
   background-color: inherit;
-  padding: 0;
-  margin: 0;
   border: none;
   cursor: pointer; }
 
@@ -504,6 +478,8 @@ button {
   display: flex;
   align-items: center;
   gap: 8px; }
+  .icon--big .icon {
+    opacity: 1; }
 
 .upper-menu {
   display: flex;
@@ -546,7 +522,7 @@ button {
   gap: 16px; }
   @media (min-width: 768px) {
     .upper-menu__block {
-      gap: 32px; } }
+      gap: 16px; } }
 
 @media (max-width: 767.9px) {
   .upper-menu__block--hidden {
@@ -586,6 +562,12 @@ button {
 .content__main {
   display: flex;
   flex-direction: column; }
+  @media (min-width: 320px) {
+    .content__main {
+      gap: 24px; } }
+  @media (min-width: 768px) {
+    .content__main {
+      gap: 32px; } }
   @media (min-width: 1120px) {
     .content__main {
       gap: 50px;
@@ -764,24 +746,6 @@ button {
     padding-left: 24px;
     padding-right: 24px; } }
 
-.header-post {
-  background-image: linear-gradient(to right, #F8F8F8, #FFFFFF);
-  box-sizing: border-box;
-  border-top: 1px solid #D9FFF5;
-  padding-top: 16px;
-  padding-bottom: 16px; }
-
-.header-post__title {
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #7E7E82;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: uppercase; }
-
 .dropdown {
   display: flex;
   justify-content: center;
@@ -792,11 +756,11 @@ button {
   border: 2px solid #FF3E79; }
 
 @media (max-width: 767.9px) {
-  .content-post {
+  .content-post, .content-post__container {
     overflow: hidden; } }
 
 @media (min-width: 768px) {
-  .content-post {
+  .content-post, .content-post__container {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -836,6 +800,24 @@ button {
 
 .content-post__text {
   color: #1B1C21; }
+
+.content-post__header-post {
+  background-image: linear-gradient(to right, #F8F8F8, #FFFFFF);
+  box-sizing: border-box;
+  border-top: 1px solid #D9FFF5;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.content-post__title {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase; }
 
 .container-brands__brand {
   width: 240px;
@@ -1016,7 +998,9 @@ button {
 .container-prices__element {
   padding-top: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #EAEAEA; }
+  border-bottom: 1px solid #EAEAEA;
+  padding-right: 10px;
+  padding-left: 10px; }
 
 .container-prices__element:last-child {
   display: flex;
@@ -1073,7 +1057,7 @@ button {
     background-image: url(./static/dropdown.svg);
     background-repeat: no-repeat;
     background-position: center;
-    bottom: -2px; }
+    bottom: -3px; }
   @media (max-width: 767.9px) {
     .container-prices__button--description {
       width: 210px;
@@ -1290,12 +1274,19 @@ button {
     .popup {
       box-shadow: -16px 0px 52px rgba(14, 24, 80, 0.2);
       max-height: 676px; } }
-  .popup .title::before {
-    margin-left: -32px; }
 
 @media (min-width: 768px) {
   .feedback--call {
     height: 94vh; } }
+
+.popup__title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold; }
+  .popup__title::before {
+    position: absolute;
+    margin-left: -32px;
+    top: -5px; }
 
 .popup--open {
   position: fixed;
@@ -1385,7 +1376,20 @@ input::placeholder, textarea::placeholder {
 body {
   font-family: TT_Lakes, Arial, sans-serif;
   background-color: #F8F8F8;
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
+
+button {
+  padding: 0;
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
 
 
 /*# sourceMappingURL=style.css.map*/
