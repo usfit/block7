@@ -11,6 +11,11 @@ if (window.matchMedia('(max-width: 1119.9px)').matches) {
     spanText.classList.add('hidden');
 }
 
+if (window.matchMedia('(min-width: 1120px)').matches) {
+    readMore.querySelector('p').textContent = 'Скрыть';
+    readMore.querySelector('img').src = 'img/icons/read_hide.svg';
+}
+
 readMore.addEventListener('click', function(evt) {
     evt.preventDefault;
     if (window.matchMedia('(min-width: 768px) and (max-width: 1119.9px)').matches) {

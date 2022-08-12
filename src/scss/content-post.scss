@@ -1,6 +1,6 @@
 @import 'colors.scss';
 
-.content-post {
+.content-post, .content-post__container {
     @media (max-width: 767.9px) {
         overflow: hidden;
     }
@@ -50,4 +50,24 @@
 
 .content-post__text {
     color: $text-color;
+}
+
+.content-post__header-post {
+    background-image: $background-header-post;
+    box-sizing: border-box;
+    border-top: 1px solid $line-color;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.content-post__title {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: $title-color;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
 }

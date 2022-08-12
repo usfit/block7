@@ -15,6 +15,11 @@ let navigation = document.querySelector('.navigation');
 
 let openClose = function(feedbackClass) {
     feedbackClass.classList.toggle('popup--open');
+    if (feedbackClass.classList.contains('popup--open')) {
+        document.body.style.overflowY = 'hidden';
+    } else {
+        document.body.style = 'none';
+    }
 };
 
 let openCloseMask = function() {
