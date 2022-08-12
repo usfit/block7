@@ -34,4 +34,20 @@ body {
   font-family: TT_Lakes, Arial, sans-serif;
   background-color: $background-color;
   width: 100%;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
